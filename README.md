@@ -1,34 +1,23 @@
 <div align="center">
-<img width=250 src ="http://i.imgur.com/NTfzccd.png" />
-
-<br> <br>
 
 <h1> BoardBank </h1> 
-<h3> Money Manager for Board Games </h3></div>
+<h3> Project used for XCode UI tests example </h3></div>
 
 <br>
+### Test run
 
+Under this example was used default iOS UI Testing Bundle. 
+ 
+* Tests have number inside class name that help to run them in order
+* Test test02CretePlayerOneWithCustomBalance use software keyboard (Simulator -> Keyboard -> Toggle Software Keyboard)
+* Tests cover: 
+- start new game (used to reset game data)
+- create new player 
+- create player with custom balance
+- player get extra $200
+- remove player from game
 
-### Screenshots
-
-<table align="center" border="0">
-
-<tr>
-<td> <img src="http://i.imgur.com/fXB42iY.png"> </td>
-<td> <img src="http://i.imgur.com/oiV55gW.png"> </td>
-<td> <img src="http://i.imgur.com/MgpfvQU.png"> </td>
-</tr>
-
-<tr>
-<td> <img src="http://i.imgur.com/EMGOw0g.png"> </td>
-<td> <img src="http://i.imgur.com/ToExFPr.png"> </td>
-<td> <img src="http://i.imgur.com/gD45NYH.png"> </td>
-</tr>
-
-
-</table>
-
-### Description
+### Description of application
 
 BoardBank lets you focus on the fun sides of MONOPOLY® by handling all the money transactions for you. This app keeps track of the accounts of up to 6 players so you can enjoy the game without having to worry about counting money anymore.
 
