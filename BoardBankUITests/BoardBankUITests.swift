@@ -109,6 +109,7 @@ class BoardBankUITests: XCTestCase {
         
         //add & save player
         tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Add Player"]/*[[".cells.staticTexts[\"Add Player\"]",".staticTexts[\"Add Player\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        
         //check saved new playerOne
         XCTAssertTrue(app.collectionViews.staticTexts[userNameTwo].exists)
         
@@ -117,13 +118,16 @@ class BoardBankUITests: XCTestCase {
         
         let app = XCUIApplication()
         let playerOneCell = app.collectionViews/*@START_MENU_TOKEN@*/.staticTexts["UserName1"]/*[[".cells.staticTexts[\"UserName1\"]",".staticTexts[\"UserName1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        
         XCTAssertTrue(playerOneCell.exists)
         playerOneCell.tap()
+        
         //add $200 to playerOne
         sleep(1)
         app.sheets["UserName1: $1.200"].buttons["Add $200"].tap()
         sleep(1)
         playerOneCell.tap()
+        
         //check new value
         XCTAssertTrue(app.sheets["UserName1: $1.400"].staticTexts["UserName1: $1.400"].exists)
         
@@ -131,10 +135,12 @@ class BoardBankUITests: XCTestCase {
     func test05PlayerOneDeletedFromGame() {
         
         let app = XCUIApplication()
+        
         //select playerTwo
         let playerTwoCell = app.collectionViews.cells.otherElements.containing(.staticText, identifier:"UserName2").children(matching: .other).element
         XCTAssertTrue(playerTwoCell.exists)
         playerTwoCell.tap()
+        
         //delete playerTwo add sleep as menu opening have delay
         sleep(1)
         app.sheets["UserName2: $1.500"].buttons["Delete"].tap()
