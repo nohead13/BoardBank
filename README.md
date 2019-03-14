@@ -4,6 +4,7 @@
 <h3> Project used for XCode UI tests example </h3></div>
 
 <br>
+
 ### Test run
 
 Under this example was used default iOS UI Testing Bundle. 
