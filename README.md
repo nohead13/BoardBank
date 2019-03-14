@@ -12,11 +12,11 @@ Under this example was used default iOS UI Testing Bundle.
 * Tests have number inside class name that help to run them in order
 * Test test02CretePlayerOneWithCustomBalance use software keyboard (Simulator -> Keyboard -> Toggle Software Keyboard)
 * Tests cover: 
-- start new game (used to reset game data)
-- create new player 
-- create player with custom balance
-- player get extra $200
-- remove player from game
+  - start new game (used to reset game data)
+  - create new player 
+  - create player with custom balance
+  - player get extra $200
+  - remove player from game
 
 ### Description of application
 
